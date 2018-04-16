@@ -5,7 +5,7 @@ var webpack = require('webpack');
 module.exports = {
   devtool: 'eval',
   entry: [
-    './src/index.js'
+    './src/simple-todo/index.js'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
