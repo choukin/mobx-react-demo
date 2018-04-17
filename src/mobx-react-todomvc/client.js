@@ -1,11 +1,10 @@
 import 'todomvc-common'
 import TodoStore from './store/TodoStore'
 import ViewStore from './stores/ViewStore'
-import TodoApp from './components/todoApp.js'
+import TodoApp from './views/todoApp.js'
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Todo from '../simple-todo/components/Todo';
 
 const initialState = window.initialState && JSON.parse(window.initialState) ||{}
 
@@ -20,8 +19,8 @@ ReactDOM.render(
 )
 
 if (module.hot) {
-    module.hot.accept('./components/todoApp', () => {
-        let NewTodoApp = require('./components/todoApp').default
+    module.hot.accept('./views/todoApp', () => {
+        let NewTodoApp = require('./views/todoApp').default
         ReactDOM.render(
             <NewTodoApp todoStore={todoStore} viewStore={viewStore}/>,
             document.getElementById('todoapp')

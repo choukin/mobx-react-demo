@@ -50,7 +50,7 @@ export default class TodoStore {
     }
 
     toJS() {
-        return this.todos.map(todo => toJS())
+        return this.todos.map(todo => todo.toJS())
     }
 
     static fromJS(array) {

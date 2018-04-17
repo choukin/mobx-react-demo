@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "webpack-dev-server --config webpack.config.js --hot --open",
     "babelnode": "babel-node index.js",
-    "start":"node bin/server.js",
-    "build":"NODE_ENVIRONMENT=production webpack -p",
+    "start": "node bin/server.js",
+    "build": "NODE_ENVIRONMENT=production webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
